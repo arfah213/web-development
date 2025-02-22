@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Record</title>
+</head>
+<body>
+    <h2>Student Academic Record</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>101</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>102</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>103</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Emily Davis</td>
+            <td>104</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>David Wilson</td>
+            <td>105</td>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+</html>
