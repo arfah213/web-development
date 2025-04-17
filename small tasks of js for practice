@@ -1,0 +1,134 @@
+// first task 1
+console.log("first output");
+let nums = [10, 15, 20, 25, 30];
+
+for (let num of nums) {
+    if (num % 2 === 0) {
+        console.log(num); // Print even numbers
+    }
+}
+
+                                                    //task 2
+console.log("second output");
+let numbers = [10, 5, 30, 2, 50, 7];
+
+let max = nums[0]; 
+let min = nums[0]; 
+
+for (let num of numbers) {
+    if (num > max) {
+        max = num;
+    }
+    if (num < min) {
+        min = num; 
+    }
+}
+
+console.log("Max:", max);
+console.log("Min:", min);
+
+
+                                                  //task 3
+console.log("third output");
+let words = ["apple", "banana", "cherry","givi"];
+
+for (let word of words) {
+    console.log(word.toUpperCase());
+}
+
+                                                         //task 4
+console.log("fourth output");
+
+
+let softwareHouses = ["Microsoft", "Google", "Apple", "Amazon"];
+
+console.log("Original Array:", softwareHouses);
+
+// Function to remove the first name
+function removeFirst() {
+    softwareHouses.shift();
+    console.log("After Removing First Name:", softwareHouses);
+}
+
+// Function to remove a name from the middle and add a new name
+function replaceMiddle(newName) {
+    let middleIndex = Math.floor(softwareHouses.length / 2);
+    softwareHouses.splice(middleIndex, 1, newName);
+    console.log("After Replacing Middle Name:", softwareHouses);
+}
+
+// Function to add a new name at the end
+function addAtEnd(newName) {
+    softwareHouses.push(newName);
+    console.log("After Adding Name at the End:", softwareHouses);
+}
+
+removeFirst();
+replaceMiddle("Salesforce");
+addAtEnd("IBM");
+
+//                             task 5
+console.log("5 output");
+function countVowels(str) {
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+console.log(countVowels("Hello World")); 
+console.log(countVowels("JavaScript"));  
+                                       //task 6
+console.log(" 6 task output");
+const countVowelsArrow = (str) => {
+    return str.split('').filter(char => "aeiouAEIOU".includes(char)).length;
+};
+
+// Test the arrow function
+console.log(countVowelsArrow("Hello World")); 
+console.log(countVowelsArrow("JavaScript")); 
+
+                         //task 7
+                         console.log(" 7 task output");
+ let number = [2, 4, 6, 8, 10];
+
+ number.forEach(num => {
+  console.log(num * num);
+   });
+
+   //task 8 
+   console.log(" 8 task output");
+   let students = [
+    { name: "Alice", marks: 45 },
+    { name: "Bob", marks: 60 },
+    { name: "Charlie", marks: 55 },
+    { name: "David", marks: 40 }
+];
+
+let passedStudents = students.filter(student => student.marks > 50);
+
+console.log(passedStudents);
+
+   // task 9
+   console.log(" 9task output");
+   let n = 5; 
+   let numbersArray = Array.from({ length: n }, (index, i) => (i + 1) * 2); // Generating numbers dynamically
+   
+   console.log("Generated Array:", numbersArray);
+  // task 10
+  console.log(" 10 task output");
+  let numb = [2, 3, 4, 5];
+
+let product = numb.reduce((acc, num) => acc * num, 1);
+
+console.log("Product:", product);
+
+
+
+                         
